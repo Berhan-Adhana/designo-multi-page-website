@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-[16px] leading-[26px] font-jost font-[400] text-darkGrey overflow-x-hidden;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-medium;
+  }
+  h1 {
+    @apply text-[32px] leading-9 md:text-[48px] md:leading-[48px];
+  }
+  h2 {
+    @apply text-[32px] leading-9 md:text-[40px] md:leading-[40px];
+  }
+}
+
+@layer components {
+  .btn {
+    @apply uppercase font-medium rounded-[8px] text-[15px] cursor-pointer px-4 py-2 border-none outline-none focus:outline-none;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-lightPeach;
+  }
+  .btn-white {
+    @apply bg-white text-black hover:bg-lightPeach;
+  }
+  .app-container {
+    @apply px-4 w-full md:px-[40px] lg:px-[70px]  xl:px-[165px];
+  }
+  .onHover:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 50%;
+    /* background-color: #333; */
+    transition: width 0.3s ease-out, left 0.3s ease-out;
+  }
+
+  .onHover:hover:before {
+    width: 100%;
+    left: 0;
+    transition: width 0.3s ease-out, left 0.3s ease-out;
+  }
+}
