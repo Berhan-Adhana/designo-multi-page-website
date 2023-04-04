@@ -19,7 +19,7 @@ const WebDesign = React.lazy(() => import("./pages/WebDesign.jsx"));
 const AppDesign = React.lazy(() => import("./pages/AppDesign.jsx"));
 const GraphicDesign = React.lazy(() => import("./pages/GraphicDesign.jsx"));
 const Locations = React.lazy(() => import("./pages/Locations.jsx"));
-const Contacts = React.lazy(() => import("./pages/GraphicDesign.jsx"));
+const Contacts = React.lazy(() => import("./pages/Contacts.jsx"));
 
 const FooterAndCTA = () => {
   const location = useLocation();
