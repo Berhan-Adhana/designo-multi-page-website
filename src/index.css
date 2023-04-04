@@ -4,8 +4,18 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     @apply text-[16px] leading-[26px] font-jost font-[400] text-darkGrey overflow-x-hidden;
+  }
+  /* To remove the default ugly white background of the input form*/
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #e7816b inset !important;
+    box-shadow: 0 0 0 30px #e7816b inset !important;
+    background-color: #e7816b !important;
+    color: #fff !important;
   }
   h1,
   h2,

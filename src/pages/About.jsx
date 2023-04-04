@@ -16,8 +16,8 @@ const About = () => {
     <div className="pt-[57px]">
       <div className="flex flex-col lg:flex-row-reverse items-center app-container lg:h-[480px]">
         <picture className="lg:flex-1">
-          <source media="(min-width:1024px )" srcset={aboutImageDesktop} />
-          <source media="(min-width:768px )" srcset={aboutImageTablet} />
+          <source media="(min-width:1024px )" srcSet={aboutImageDesktop} />
+          <source media="(min-width:768px )" srcSet={aboutImageTablet} />
           <img
             src={aboutImage}
             alt="team"
@@ -38,8 +38,8 @@ const About = () => {
 
       <div className="flex flex-col lg:flex-row items-center app-container lg:h-[480px] mt-[120px]">
         <picture className="">
-          <source media="(min-width:1024px )" srcset={aboutImageDesktop2} />
-          <source media="(min-width:768px )" srcset={aboutImageTablet2} />
+          <source media="(min-width:1024px )" srcSet={aboutImageDesktop2} />
+          <source media="(min-width:768px )" srcSet={aboutImageTablet2} />
           <img
             src={aboutImage2}
             alt="team"
@@ -65,8 +65,8 @@ const About = () => {
       <Cities />
       <div className="flex flex-col lg:flex-row-reverse items-center app-container lg:h-[480px] mt-[120px]">
         <picture className="">
-          <source media="(min-width:1024px )" srcset={aboutImageDesktop3} />
-          <source media="(min-width:768px )" srcset={aboutImageTablet3} />
+          <source media="(min-width:1024px )" srcSet={aboutImageDesktop3} />
+          <source media="(min-width:768px )" srcSet={aboutImageTablet3} />
           <img
             src={aboutImage3}
             alt="team"
