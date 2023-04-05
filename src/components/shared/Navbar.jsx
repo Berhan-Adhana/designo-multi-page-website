@@ -30,7 +30,7 @@ const Navbar = () => {
       {/* Desktop Version */}
       <nav
         className={`${
-          isTop ? "bg-white" : "bg-primary"
+          isTop ? "bg-white text-black" : "bg-primary text-white"
         } hidden md:flex h-full items-center justify-between md:gap-x-[100px] pr-4 `}
       >
         <NavLink to="/">
@@ -45,9 +45,7 @@ const Navbar = () => {
             <NavLink
               key={index}
               to={menu.menuLink}
-              className={`uppercase ${
-                isTop ? "text-black" : "text-white"
-              }block text-[14px] font-[400] leading-[14px] tracking-[2px] relative onHover before:bg-black`}
+              className="uppercase block text-[14px] font-[400] leading-[14px] tracking-[2px] relative onHover before:bg-black"
             >
               {menu.menuItem}
             </NavLink>
