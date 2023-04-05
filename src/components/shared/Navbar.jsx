@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
-import { Menus } from "../constants";
-import logo from "../assets/shared/desktop/logo-dark.png";
-import logoLight from "../assets/shared/desktop/logo-light.png";
+import { Menus } from "../../data";
+import logo from "../../assets/shared/desktop/logo-dark.png";
+import logoLight from "../../assets/shared/desktop/logo-light.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

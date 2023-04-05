@@ -1,6 +1,6 @@
 import React from "react";
 import { SlArrowUp } from "react-icons/sl";
-import useScrollToTop from "../hooks/useScrollToTop";
+import useScrollToTop from "../../hooks/useScrollToTop";
 
 const ScrollToTop = () => {
   const [isBottom] = useScrollToTop();

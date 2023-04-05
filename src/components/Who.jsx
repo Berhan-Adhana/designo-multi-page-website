@@ -1,11 +1,9 @@
-import React from "react";
-import { whosData } from "../constants";
-const Who = () => {
-  
+const Who = ({ whosData }) => {
   return (
     <div className="app-container flex flex-col bg-bgTwoCircles  items-center gap-y-[80px] mt-[120px] mb-[200px] lg:flex-row lg:gap-x-6 lg:justify-center lg:items-start ">
       {whosData.map((who, index) => (
         <article
+          
           key={index}
           className="flex flex-col gap-y-12 items-center md:flex-row md:gap-x-12 lg:flex-col lg:gap-x-[30px] lg:justify-start"
         >

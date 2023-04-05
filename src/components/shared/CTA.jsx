@@ -1,10 +1,8 @@
 import React from "react";
-import bgCirlces from "../assets/shared/desktop/bg-pattern-two-circles.svg";
 const CTA = () => {
   return (
     <div className="app-container rounded-md absolute top-0 -translate-y-[50%] ">
       <div className="relative flex flex-col items-center w-full py-[64px] bg-primary bg-bgPattern object-contain bg-repeat rounded-md justify-center  lg:flex-row lg:justify-between lg:gap-x-[100px] px-6 md:px-[58px] lg:px-[95px] ">
-       
         <div className="flex flex-col items-center justify-center flex-1 lg:items-start text-center lg:text-left">
           <h2 className="text-white ">
             Let’s talk about

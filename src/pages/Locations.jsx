@@ -1,5 +1,5 @@
 import React from "react";
-import { locations } from "../constants";
+import { locations } from "../data";
 import Location from "../components/Location";
 const Locations = () => {
   return (

@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { animate, delay, motion } from "framer-motion";
 
-const City = ({ location }) => {
+const City = ({ location, index }) => {
   return (
-    <article className="flex flex-col items-center">
+    <article
+      
+      className="flex flex-col items-center"
+    >
       <div className="h-[202px] w-[202px] bg-bgPattern bg-contain flex items-center justify-center">
         <img src={location.image} alt={location.place} className="" />
       </div>

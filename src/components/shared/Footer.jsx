@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/shared/desktop/logo-light.png";
-import { Menus } from "../constants";
+import logo from "../../assets/shared/desktop/logo-light.png";
+import { Menus, socialMedia } from "../../data";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import {
-  AiFillFacebook,
-  AiFillYoutube,
-  AiFillTwitterCircle,
-  AiFillInstagram,
-  AiOutlinePhone,
-  AiOutlineMail,
-} from "react-icons/ai";
+import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
-import { FaPinterestSquare } from "react-icons/fa";
 const Footer = () => {
   const location = useLocation();
   const [isContact, setIsContact] = useState(false);
@@ -83,27 +75,16 @@ const Footer = () => {
             </div>
           </div>
           {/* Social Media */}
+
           <div className="flex items-center justify-center gap-x-4 lg:self-end">
-            <AiFillFacebook
-              className="text-primary hover:text-lightPeach cursor-pointer transition-colors duration-300"
-              size={24}
-            />
-            <AiFillYoutube
-              className="text-primary hover:text-lightPeach cursor-pointer transition-colors duration-300"
-              size={24}
-            />
-            <AiFillTwitterCircle
-              className="text-primary hover:text-lightPeach cursor-pointer transition-colors duration-300"
-              size={24}
-            />
-            <AiFillInstagram
-              className="text-primary hover:text-lightPeach cursor-pointer transition-colors duration-300"
-              size={24}
-            />
-            <FaPinterestSquare
-              className="text-primary hover:text-lightPeach cursor-pointer transition-colors duration-300"
-              size={24}
-            />
+            {socialMedia.map((social, index) => (
+              <Link to={social.link} target="_blank">
+                <social.icon
+                  className="text-primary hover:text-lightPeach cursor-pointer transition-colors duration-300"
+                  size={24}
+                />
+              </Link>
+            ))}
           </div>
         </div>
       </div>
