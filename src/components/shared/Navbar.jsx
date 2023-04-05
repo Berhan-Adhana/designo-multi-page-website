@@ -45,7 +45,9 @@ const Navbar = () => {
             <NavLink
               key={index}
               to={menu.menuLink}
-              className="uppercase block text-[14px] font-[400] leading-[14px] tracking-[2px] relative onHover before:bg-black"
+              className={`uppercase ${
+                isTop ? "text-black" : "text-white"
+              }block text-[14px] font-[400] leading-[14px] tracking-[2px] relative onHover before:bg-black`}
             >
               {menu.menuItem}
             </NavLink>
