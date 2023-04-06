@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { AnimatePresence } from "framer-motion";
 import "./index.css";
-import Navbar from "./components/shared/Navbar";
+import Navbar from "./components/common/Navbar.jsx";
 import {
   BrowserRouter as Router,
   useLocation,
@@ -10,9 +10,9 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import CTA from "./components/shared/CTA";
-import Footer from "./components/shared/Footer";
-import ScrollToTop from "./components/shared/ScrollToTop";
+import CTA from "./components/common/CTA";
+import Footer from "./components/common/Footer";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 const Home = React.lazy(() => import("./pages/Home.jsx"));
 const About = React.lazy(() => import("./pages/About.jsx"));
