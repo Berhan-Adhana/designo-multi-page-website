@@ -1,11 +1,9 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Categories from "../components/Categories";
+import Hero from "../components/home/Hero.jsx";
+import Categories from "../components/shared/Categories.jsx";
 import { homeData } from "../data";
-import Who from "../components/Who";
-import CTA from "../components/shared/CTA";
-import Footer from "../components/shared/Footer";
-import Category from "../components/Category";
+import Who from "../components/home/Who";
+import Category from "../components/shared/Category";
 
 const Home = () => {
   const { heroData, projectsCategory, whosData } = homeData;

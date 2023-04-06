@@ -10,7 +10,7 @@ import aboutImageDesktop2 from "../assets/about/desktop/image-world-class-talent
 import aboutImage3 from "../assets/about/mobile/image-real-deal.jpg";
 import aboutImageTablet3 from "../assets/about/tablet/image-real-deal.jpg";
 import aboutImageDesktop3 from "../assets/about/desktop/image-real-deal.jpg";
-import Cities from "../components/Cities";
+import Cities from "../components/locations/Cities.jsx";
 const About = () => {
   return (
     <div className="pt-[57px]">
