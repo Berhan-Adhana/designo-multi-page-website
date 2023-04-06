@@ -5,7 +5,7 @@ const useScrollToTop = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1000) setIsBottom(true);
+      if (window.scrollY > 400) setIsBottom(true);
       else setIsBottom(false);
     };
     window.addEventListener("scroll", handleScroll);
