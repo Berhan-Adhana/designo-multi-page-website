@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { animate, delay, easeInOut, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 const City = ({ location, index }) => {
   const { ref, inView } = useInView({
@@ -9,9 +8,9 @@ const City = ({ location, index }) => {
   });
 
   return (
-    <motion.article
+    <article
       ref={ref}
-      className={`flex flex-col items-center transition-all duration-[500ms] ${
+      className={`flex flex-col items-center transition-all duration-[900ms] ${
         inView ? "translate-y-0 opacity-1" : "translate-y-20 opacity-0"
       }`}
     >
@@ -26,7 +25,7 @@ const City = ({ location, index }) => {
           SEE LOCATION
         </Link>
       </button>
-    </motion.article>
+    </article>
   );
 };
 
