@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const CTA = () => {
   return (
     <div className="app-container rounded-md absolute top-0 -translate-y-[50%] ">
@@ -13,7 +14,9 @@ const CTA = () => {
             how our expertise can help your business grow.
           </p>
         </div>
-        <button className="btn btn-white mt-8">Get in touch</button>
+        <Link to="/contact">
+          <button className="btn btn-white mt-8">Get in touch</button>
+        </Link>
       </div>
     </div>
   );

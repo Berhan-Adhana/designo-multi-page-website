@@ -2,8 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { projectsData } from "../data";
 import Header from "../components/shared/Header";
-import Projects from "../components/Projects";
-import Categories from "../components/Categories";
+import Projects from "../components/singleProject/Projects";
+import Categories from "../components/shared/Categories.jsx";
+import { motion } from "framer-motion";
 
 const SingleProject = () => {
   const { id } = useParams();
@@ -14,7 +15,16 @@ const SingleProject = () => {
   );
 
   return (
-    <div className="pt-[57px]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, delay: 1 }}
+      transition={{
+        ease: "easeInOut",
+        duration: 0.6,
+        delay: 0.15,
+      }}
+      className="pt-[57px]"
+    >
       {/* web design */}
       <Header
         title={singlePage[0].categoryTitle}
@@ -24,7 +34,7 @@ const SingleProject = () => {
       <Projects projectsData={singlePage[0].projects} />
       {/* Categories */}
       <Categories categoriesData={otherProjectsCategories} />
-    </div>
+    </motion.div>
   );
 };
 
