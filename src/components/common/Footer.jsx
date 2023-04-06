@@ -78,7 +78,7 @@ const Footer = () => {
 
           <div className="flex items-center justify-center gap-x-4 lg:self-end">
             {socialMedia.map((social, index) => (
-              <Link to={social.link} target="_blank">
+              <Link key={index} to={social.link} target="_blank">
                 <social.icon
                   className="text-primary hover:text-lightPeach cursor-pointer transition-colors duration-300"
                   size={24}
